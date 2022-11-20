@@ -3,7 +3,7 @@
     ";
     $Pass = "password:".$_POST['password']."
     ";
-    $file=fopen("Zadanie_Ulozene.txt", "w");
+    $file=fopen("zadanie.txt", "w");
     fwrite($file, $Name);
     fwrite($file, $Pass);
     fclose($file);
