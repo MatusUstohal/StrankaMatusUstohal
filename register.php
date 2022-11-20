@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <style>
     h1 {text-align: center;}
+    <link rel="stylesheet" href="styles.css">
 </style>
 </head>
 <main>
