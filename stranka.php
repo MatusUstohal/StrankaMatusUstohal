@@ -1,5 +1,5 @@
 <?php
-    $text1 = "Name:" . $_POST['name'];
+    $text1 = $_POST['name'];
     $file = fopen("zadanie.txt","a") or die("Unable to open file!");
     fwrite($file, $text1);
     fclose($file);   
