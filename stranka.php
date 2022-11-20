@@ -1,9 +1,9 @@
 <?php
-    $text1 ="Name: " . $_POST['name'];
-    $text2 ="Surname: " . $_POST['surname'];
-    $text3 ="Alias: " . $_POST['username'];
-    $text4 ="Email: " . $_POST['email'];
-    $text5 ="Telephone number: " . $_POST['number'];
+    $text1 ="Name: " . $_POST['name'] . <br>;
+    $text2 ="Surname: " . $_POST['surname'] . <br>;
+    $text3 ="Alias: " . $_POST['username'] . <br>;
+    $text4 ="Email: " . $_POST['email'] . <br>;
+    $text5 ="Telephone number: " . $_POST['number'] . <br>;
     $text6 ="Password: " . $_POST['password'];
     $file = fopen("zadanie.txt","w") or die("Unable to open file!");
     fwrite($file, $text1);
