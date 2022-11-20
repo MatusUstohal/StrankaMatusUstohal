@@ -1,10 +1,10 @@
 <?php
-    $v1 = $_GET['name'];
-    $v2 = $_GET['surname'];
-    $v3 = $_GET['username'];
-    $v4 = $_GET['email'];
-    $v5 = $_GET['number'];
-    $v6 = $_GET['password'];
+    $v1 = $_POST['name'];
+    $v2 = $_POST['surname'];
+    $v3 = $_POST['username'];
+    $v4 = $_POST['email'];
+    $v5 = $_POST['number'];
+    $v6 = $_POST['password'];
 
     $text1 = "Name:" . $v1;
     $text2 = "Surname:" . $v2;
@@ -35,7 +35,7 @@
 </head>
 <body>
 <main>
-    <form action="register.php" method="get">
+    <form action="register.php" method="post">
         <h1>Sign Up</h1>
         <div>
             <label for="name">Name:</label>
