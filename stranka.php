@@ -12,12 +12,24 @@
     <form action="register.php" method="post">
         <h1>Sign Up</h1>
         <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="surname">Surname:</label>
+            <input type="text" name="surname" id="surname">
+        </div>
+        <div>
             <label for="username">Username:</label>
             <input type="text" name="username" id="username">
         </div>
         <div>
             <label for="email">Email:</label>
             <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="number">Telephone number:</label>
+            <input type="text" name="number" id="number">
         </div>
         <div>
             <label for="password">Password:</label>
