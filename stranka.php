@@ -1,9 +1,25 @@
 <?php
-    $Name = "username:".$_POST['username']."";
-    $Pass = "password:".$_POST['password']."";
+    $Name = $_GET["name"];
+    $Sname = $_GET["surname"];
+    $Username = $_GET["username"];
+    $Email = $_GET["email"];
+    $Tnumber = $_GET["number"];
+    $Pass = $_GET["password"];
+
+    $text1 = "Name:" . $Name;
+    $text2 = "Surname:" . $Sname;
+    $text3 = "Username:" . $Username;
+    $text4 = "Email:" . $Email;
+    $text5 = "Tnumber:" . $Tnumber;
+    $text6 = "Password:" . $Pass;
+
     $file = fopen("zadanie.txt","w") or die("Unable to open file!");
-    fwrite($file, $Name);
-    fwrite($file, $Pass);
+    fwrite($file, $text1);
+    fwrite($file, $text2);
+    fwrite($file, $text3);
+    fwrite($file, $text4);
+    fwrite($file, $text5);
+    fwrite($file, $text6);
     fclose($file);
 ?>
 
