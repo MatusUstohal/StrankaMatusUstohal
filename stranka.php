@@ -1,10 +1,10 @@
 <?php
-    $text1 = "Name:" echo $_POST;
-    $text2 = "Surname:" echo $_POST;
-    $text3 = "Username:" echo $_POST;
-    $text4 = "Email:" echo $_POST;
-    $text5 = "Tnumber:" echo $_POST;
-    $text6 = "Password:" echo $_POST;
+    $text1 = "Name:" . echo $_POST;
+    $text2 = "Surname:" . echo $_POST;
+    $text3 = "Username:" . echo $_POST;
+    $text4 = "Email:" . echo $_POST;
+    $text5 = "Tnumber:" . echo $_POST;
+    $text6 = "Password:" . echo $_POST;
 
     $file = fopen("zadanie.txt","w") or die("Unable to open file!");
     fwrite($file, $text1);
