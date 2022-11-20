@@ -14,7 +14,7 @@
         font-family: Arial, Helvetica, sans-serif;
     } 
     h1 {
-        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: black;
     }   
 </style>
