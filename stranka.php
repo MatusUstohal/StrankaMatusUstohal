@@ -1,17 +1,11 @@
 <?php
-    $v1 = $_POST['name'];
-    $v2 = $_POST['surname'];
-    $v3 = $_POST['username'];
-    $v4 = $_POST['email'];
-    $v5 = $_POST['number'];
-    $v6 = $_POST['password'];
-
-    $text1 = "Name:" . $v1;
-    $text2 = "Surname:" . $v2;
-    $text3 = "Username:" . $v3;
-    $text4 = "Email:" . $v4;
-    $text5 = "Tnumber:" . $v5;
-    $text6 = "Password:" . $v6;
+if(isset($_POST['submit'])){
+    $text1 = "Name:" . $_POST['name'];
+    $text2 = "Surname:" . $_POST['surname'];
+    $text3 = "Username:" . $_POST['username'];
+    $text4 = "Email:" . $_POST['email'];
+    $text5 = "Tnumber:" . $_POST['number'];
+    $text6 = "Password:" . $_POST['password'];
 
     $file = fopen("zadanie.txt","w") or die("Unable to open file!");
     fwrite($file, $text1);
@@ -22,6 +16,7 @@
     fwrite($file, $text6);
     echo $text1;
     fclose($file);   
+}
 ?>
 
 <!DOCTYPE html>
@@ -72,7 +67,7 @@
                 <a href="#" title="terms of services">terms of services</a>
             </label>
         </div>
-        <button type="submit">Register</button>
+        <button type="submit" name="submit">Register</button>
     </form>
 </main>
 </body>
