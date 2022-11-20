@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST['submit'])){
+if(isset($_POST['agree'])){
     $text1 = "Name:" . echo $_POST;
     $text2 = "Surname:" . echo $_POST;
     $text3 = "Username:" . echo $_POST;
