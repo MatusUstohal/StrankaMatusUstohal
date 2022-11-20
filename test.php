@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.phptutorial.net/app/css/style.css">
     <title>Register</title>
-    body {
+</head>
+<body>
+    {
         background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
         background-size: 400% 400%;
         animation: gradient 15s ease infinite;
@@ -24,8 +26,6 @@
             background-position: 0% 50%;
         }
     }
-</head>
-<body>
 <main>
     <form action="register.php" method="post">
         <h1>Sign Up</h1>
