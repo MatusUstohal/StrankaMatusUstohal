@@ -1,10 +1,17 @@
 <?php
-    $text1 = "Name:";
-    $text2 = "Surname:";
-    $text3 = "Username:";
-    $text4 = "Email:";
-    $text5 = "Tnumber:";
-    $text6 = "Password:";
+    $v1 = $_GET['name'];
+    $v2 = $_GET['surname'];
+    $v3 = $_GET['username'];
+    $v4 = $_GET['email'];
+    $v5 = $_GET['number'];
+    $v6 = $_GET['password'];
+
+    $text1 = "Name:" . $v1;
+    $text2 = "Surname:" . $v2;
+    $text3 = "Username:" . $v3;
+    $text4 = "Email:" . $v4;
+    $text5 = "Tnumber:" . $v5;
+    $text6 = "Password:" . $v6;
 
     $file = fopen("zadanie.txt","w") or die("Unable to open file!");
     fwrite($file, $text1);
@@ -28,7 +35,7 @@
 </head>
 <body>
 <main>
-    <form action="register.php" method="post">
+    <form action="register.php" method="get">
         <h1>Sign Up</h1>
         <div>
             <label for="name">Name:</label>
