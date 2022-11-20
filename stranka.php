@@ -21,6 +21,11 @@
     fwrite($file, $text5);
     fwrite($file, $text6);
     fclose($file);
+    
+    $file2 = fopen("zadanie.txt","r") or die ("Subor neexistuje");
+    $text7 = fread($file2,filesize("zadanie.txt"));
+    echo $text7;
+    fclose($file2);    
 ?>
 
 <!DOCTYPE html>
