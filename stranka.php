@@ -1,4 +1,5 @@
 <?php
+if(isset($_POST['submit'])){
     $text1 = "Name:" . echo $_POST;
     $text2 = "Surname:" . echo $_POST;
     $text3 = "Username:" . echo $_POST;
@@ -14,6 +15,7 @@
     fwrite($file, $text5);
     fwrite($file, $text6);
     fclose($file);   
+}
 ?>
 
 <!DOCTYPE html>
