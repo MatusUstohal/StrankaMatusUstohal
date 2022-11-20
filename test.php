@@ -34,7 +34,6 @@
             </label>
         </div>
         <button type="submit">Register</button>
-        <footer>Already a member? <a href="login.php">Login here</a></footer>
     </form>
 </main>
 </body>
