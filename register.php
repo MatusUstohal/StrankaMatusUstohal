@@ -10,7 +10,9 @@
         align-content: center;
         height: 100vh;
         color: white;
-        font-size: 50px;
+        font-size: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+        
     }
 </style>
 </head>
