@@ -12,8 +12,11 @@
         color: white;
         font-size: 35px;
         font-family: Arial, Helvetica, sans-serif;
-        
-    }
+    } 
+    h1 {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+    }   
 </style>
 </head>
 <body>
