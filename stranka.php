@@ -5,6 +5,7 @@
     $text4 ="Email: " . $_POST['email'] . "\n";
     $text5 ="Telephone number: " . $_POST['number'] . "\n";
     $text6 ="Password: " . $_POST['password'];
+    $text7 ="Company: " . $_POST['company'];
     $file = fopen("zadanie.txt","w") or die("Unable to open file!");
     fwrite($file, $text1);
     fwrite($file, $text2);
@@ -12,6 +13,7 @@
     fwrite($file, $text4);
     fwrite($file, $text5);
     fwrite($file, $text6);
+    fwrite($file, $text7);
     fclose($file);   
 ?>
 
@@ -53,8 +55,8 @@
             <input type="password" name="password" id="password">
         </div>
         <div>
-            <label for="password2">Password Again:</label>
-            <input type="password" name="password2" id="password2">
+            <label for="company">Company:</label>
+            <input type="company" name="company" id="company">
         </div>
         <div>
             <label for="agree">
