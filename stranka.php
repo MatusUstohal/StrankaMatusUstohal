@@ -15,17 +15,17 @@
 
     $file = fopen("zadanie.txt","w") or die("Unable to open file!");
     fwrite($file, $text1);
+    echo "<br>";
     fwrite($file, $text2);
+    echo "<br>";
     fwrite($file, $text3);
+    echo "<br>";
     fwrite($file, $text4);
+    echo "<br>";
     fwrite($file, $text5);
+    echo "<br>";
     fwrite($file, $text6);
-    fclose($file);
-    
-    $file2 = fopen("zadanie.txt","r") or die ("Subor neexistuje");
-    $text7 = fread($file2,filesize("zadanie.txt"));
-    echo $text7;
-    fclose($file2);    
+    fclose($file);   
 ?>
 
 <!DOCTYPE html>
