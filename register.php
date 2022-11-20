@@ -9,14 +9,11 @@
         justify-content: center;
         align-content: center;
         height: 100vh;
+        color: white;
     }
 </style>
 </head>
 <body>
-<main>
-    <div class="text">
     <h1>Your information has been submitted successfully.</h1>
-    </div>
-</main>
 </body>
 </html>
