@@ -1,11 +1,10 @@
 <?php
-if(isset($_POST['agree'])){
-    $text1 = "Name:" . echo $_POST;
-    $text2 = "Surname:" . echo $_POST;
-    $text3 = "Username:" . echo $_POST;
-    $text4 = "Email:" . echo $_POST;
-    $text5 = "Tnumber:" . echo $_POST;
-    $text6 = "Password:" . echo $_POST;
+    $text1 = "Name:" . echo $_POST['name'];
+    $text2 = "Surname:" . echo $_POST['surname'];
+    $text3 = "Username:" . echo $_POST['username'];
+    $text4 = "Email:" . echo $_POST['email'];
+    $text5 = "Tnumber:" . echo $_POST['number'];
+    $text6 = "Password:" . echo $_POST['password'];
 
     $file = fopen("zadanie.txt","w") or die("Unable to open file!");
     fwrite($file, $text1);
@@ -15,7 +14,6 @@ if(isset($_POST['agree'])){
     fwrite($file, $text5);
     fwrite($file, $text6);
     fclose($file);   
-}
 ?>
 
 <!DOCTYPE html>
