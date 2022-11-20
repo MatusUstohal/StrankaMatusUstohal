@@ -1,20 +1,9 @@
 <?php
 if(isset($_POST['submit'])){
-    $text1 = "Name:" . $_POST['name'];
-    $text2 = "Surname:" . $_POST['surname'];
-    $text3 = "Username:" . $_POST['username'];
-    $text4 = "Email:" . $_POST['email'];
-    $text5 = "Tnumber:" . $_POST['number'];
-    $text6 = "Password:" . $_POST['password'];
+    $text1 = "Name:" . $inputs['email'];
 
     $file = fopen("zadanie.txt","a") or die("Unable to open file!");
     fwrite($file, $text1);
-    fwrite($file, $text2);
-    fwrite($file, $text3);
-    fwrite($file, $text4);
-    fwrite($file, $text5);
-    fwrite($file, $text6);
-    echo $text1;
     fclose($file);   
 }
 ?>
