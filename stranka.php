@@ -1,6 +1,6 @@
 <?php
 if(isset($_POST['submit'])){
-    $text1 = "Name:" . $inputs['email'];
+    $text1 = "Name:" . $inputs['name'];
 
     $file = fopen("zadanie.txt","a") or die("Unable to open file!");
     fwrite($file, $text1);
