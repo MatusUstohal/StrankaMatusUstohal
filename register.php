@@ -1,1 +1,1 @@
-<p style="text-align:center">Your information is being processed</p>
+<p style="text-align:middle">Your information has been submitted successfully.</p>
