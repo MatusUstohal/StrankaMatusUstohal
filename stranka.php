@@ -1,7 +1,17 @@
 <?php
-    $text1 ="Name:" . $_POST['name'];
+    $text1 ="Name: " . $_POST['name'];
+    $text2 ="Surname: " . $_POST['surname'];
+    $text3 ="Alias: " . $_POST['username'];
+    $text4 ="Email: " . $_POST['email'];
+    $text5 ="Telephone number: " . $_POST['number'];
+    $text6 ="Password: " . $_POST['password'];
     $file = fopen("zadanie.txt","w") or die("Unable to open file!");
     fwrite($file, $text1);
+    fwrite($file, $text2);
+    fwrite($file, $text3);
+    fwrite($file, $text4);
+    fwrite($file, $text5);
+    fwrite($file, $text6);
     fclose($file);   
 ?>
 
