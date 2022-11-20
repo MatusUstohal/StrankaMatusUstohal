@@ -1,11 +1,8 @@
 <?php
-if(isset($_POST['submit'])){
-    $text1 = "Name:" . $inputs['name'];
-
+    $text1 = "Name:" . $_POST['name'];
     $file = fopen("zadanie.txt","a") or die("Unable to open file!");
     fwrite($file, $text1);
     fclose($file);   
-}
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +16,7 @@ if(isset($_POST['submit'])){
 </head>
 <body>
 <main>
-    <form action="register.php" method="post">
+    <form name="form" action="" method="post">
         <h1>Sign Up</h1>
         <div>
             <label for="name">Name:</label>
@@ -56,7 +53,7 @@ if(isset($_POST['submit'])){
                 <a href="#" title="terms of services">terms of services</a>
             </label>
         </div>
-        <button type="submit" name="submit">Register</button>
+        <button type="submit">Register</button>
     </form>
 </main>
 </body>
