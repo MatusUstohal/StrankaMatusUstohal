@@ -13,6 +13,7 @@
     fwrite($file, $text4);
     fwrite($file, $text5);
     fwrite($file, $text6);
+    echo $text1;
     fclose($file);   
 ?>
 
