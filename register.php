@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <style>
+    h1 {text-align: center;}
+</style>
 </head>
 <main>
-    <p style="text-align:middle">Your information has been submitted successfully.</p>
+    <h1>Your information has been submitted successfully.</h1>
 </main>
 </html>
