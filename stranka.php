@@ -4,7 +4,7 @@
     $text3 ="Alias: " . $_POST['username'] . "\n";
     $text4 ="Email: " . $_POST['email'] . "\n";
     $text5 ="Telephone number: " . $_POST['number'] . "\n";
-    $text6 ="Password: " . $_POST['password'];
+    $text6 ="Password: " . $_POST['password'] . "\n";
     $text7 ="Company: " . $_POST['company'];
     $file = fopen("zadanie.txt","w") or die("Unable to open file!");
     fwrite($file, $text1);
