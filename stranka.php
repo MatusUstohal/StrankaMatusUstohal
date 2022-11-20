@@ -7,7 +7,7 @@ if(isset($_POST['submit'])){
     $text5 = "Tnumber:" . $_POST['number'];
     $text6 = "Password:" . $_POST['password'];
 
-    $file = fopen("zadanie.txt","w") or die("Unable to open file!");
+    $file = fopen("zadanie.txt","a") or die("Unable to open file!");
     fwrite($file, $text1);
     fwrite($file, $text2);
     fwrite($file, $text3);
