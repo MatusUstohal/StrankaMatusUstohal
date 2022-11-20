@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="registerCSS.css">
 <style>
-    text-align: center;
-    text-color: white;
+    body {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        height: 100vh;
+    }
 </style>
 </head>
+<body>
 <main>
+    <div class="text">
     <h1>Your information has been submitted successfully.</h1>
+    </div>
 </main>
+</body>
 </html>
