@@ -1,6 +1,6 @@
 <?php
 
-  /* if(isset($_GET["LCD"]) || isset($_GET["Button"]) || isset($_GET["Light"])) {
+   if(isset($_GET["LCD"]) || isset($_GET["Button"]) || isset($_GET["Light"])) {
        
       $text1 ="LCD: " . $_GET['LCD'] . "\n";
       $text2 ="Button: " . $_GET['Button'] . "\n";
@@ -11,8 +11,8 @@
       fwrite($file, $text3);
       fclose($file);
        
-      exit();*/
-      
+      exit();
+      /*
       if(isset($_GET["LCD"])){
          $text1 ="LCD: " . $_GET['LCD'] . "\n";
          $file = fopen("zadanieESP.txt","w") or die("Unable to open file!");
@@ -47,10 +47,10 @@
          $file = fopen("zadanieESP.txt","w") or die("Unable to open file!");
          fwrite($file, $text3);
          fclose($file);
-      }
+      }*/
 
-   //}
-      exit();
+   }
+      //exit();
 ?>
 
 <html>
