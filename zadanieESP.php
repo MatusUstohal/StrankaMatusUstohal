@@ -24,8 +24,12 @@
       <form action = "<?php $_PHP_SELF ?>" method = "GET">
 
          LCD: <input type = "text" name = "LCD" />
+         
+         </br>
 
          Button: <input type = "checkbox" name = "Button" />
+      
+         </br>
           
          Light-intensity: <input type="range" min="0" max="100" value="50" class="slider" id="Light">
 
