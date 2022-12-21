@@ -1,6 +1,6 @@
 <?php
 
-   if(isset($_GET["LCD text"]) || isset($_GET["Button"]) ) {
+   if(isset($_GET["LCD"]) || isset($_GET["Button"]) || isset($_GET["Light"])) {
        
       $text1 ="LCD: " . $_GET['LCD'] . "\n";
       $text2 ="Button: " . $_GET['Button'] . "\n";
