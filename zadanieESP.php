@@ -69,9 +69,7 @@
          </br>
          </br>
 
-         <input type="checkbox" id="Button"
-                    class="checkbox" />
-         <label for="Button" class="toggle">
+         Button: <input type = "checkbox" name = "Button" />
       
          </br>
          </br>
