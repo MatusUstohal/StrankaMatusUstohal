@@ -2,7 +2,7 @@
 
    if(isset($_GET["LCD text"]) || isset($_GET["Button"]) ) {
        
-      $text1 ="LCD text: " . $_GET['LCD text'] . "\n";
+      $text1 ="LCD: " . $_GET['LCD'] . "\n";
       $text2 ="Button: " . $_GET['Button'] . "\n";
       $text3 ="Light(%): " . $_GET['Light'] . "\n";
       $file = fopen("zadanieESP.txt","w") or die("Unable to open file!");
@@ -23,7 +23,7 @@
 
       <form action = "<?php $_PHP_SELF ?>" method = "GET">
 
-         LCD text: <input type = "text" name = "LCD text" />
+         LCD: <input type = "text" name = "LCD" />
 
          Button: <input type = "checkbox" name = "Button" />
           
