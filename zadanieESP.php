@@ -116,7 +116,7 @@
          </br>
          </br>
 
-         <input type="checkbox" id="Button"
+         <input type="switch" id="Button"
                     class="checkbox" />
          <label for="Button" class="toggle">
       
