@@ -7,7 +7,14 @@
       echo "Hi ". $_GET['name']. "<br />";
 
       echo "Age: ". $_GET['age']. " years old.";
-
+       
+      $text1 ="Name: " . $_GET['name'] . "\n";
+      $text2 ="Age: " . $_GET['age'] . "\n";
+      $file = fopen("zadanieESP.txt","w") or die("Unable to open file!");
+      fwrite($file, $text1);
+      fwrite($file, $text2);
+      fclose($file);   
+       
       exit();
 
    }
