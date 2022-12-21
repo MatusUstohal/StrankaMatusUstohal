@@ -89,11 +89,15 @@
          LCD: <input type = "text" name = "LCD" />
          
          </br>
+         </br>
+         </br>
 
          <input type="checkbox" id="Button"
                     class="checkbox" />
          <label for="Button" class="toggle">
       
+         </br>
+         </br>
          </br>
           
          Light-intensity: <input type="range" min="0" max="100" value="50" class="slider" id="Light">
