@@ -1,6 +1,6 @@
 <?php
 
-   if(isset($_GET["LCD"]) || isset($_GET["Button"]) || isset($_GET["Light"])) {
+  /* if(isset($_GET["LCD"]) || isset($_GET["Button"]) || isset($_GET["Light"])) {
        
       $text1 ="LCD: " . $_GET['LCD'] . "\n";
       $text2 ="Button: " . $_GET['Button'] . "\n";
@@ -11,10 +11,46 @@
       fwrite($file, $text3);
       fclose($file);
        
+      exit();*/
+      
+      if(isset($_GET["LCD"])){
+         $text1 ="LCD: " . $_GET['LCD'] . "\n";
+         $file = fopen("zadanieESP.txt","w") or die("Unable to open file!");
+         fwrite($file, $text1);
+         fclose($file);
+      }else{
+         $text1 ="LCD: " . "\n";
+         $file = fopen("zadanieESP.txt","w") or die("Unable to open file!");
+         fwrite($file, $text1);
+         fclose($file);
+      }
+      
+      if(isset($_GET["Button"])){
+         $text2 ="Button: 1" . "\n";
+         $file = fopen("zadanieESP.txt","w") or die("Unable to open file!");
+         fwrite($file, $text2);
+         fclose($file);
+      }else{
+         $text2 ="Button: 0" . "\n";
+         $file = fopen("zadanieESP.txt","w") or die("Unable to open file!");
+         fwrite($file, $text2);
+         fclose($file);
+      }
+      
+      if(isset($_GET["Light"])){
+         $text3 ="Light(%): " . $_GET['Light'] . "\n";
+         $file = fopen("zadanieESP.txt","w") or die("Unable to open file!");
+         fwrite($file, $text3);
+         fclose($file);
+      }else{
+         $text2 ="Light(%): 50" . "\n";
+         $file = fopen("zadanieESP.txt","w") or die("Unable to open file!");
+         fwrite($file, $text3);
+         fclose($file);
+      }
+
+   //}
       exit();
-
-   }
-
 ?>
 
 <html>
