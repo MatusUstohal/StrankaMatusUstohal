@@ -68,7 +68,8 @@
    </head>
    <body>
 
-      <form action = "<?php $_PHP_SELF ?>" method = "GET">
+      //<form action = "<?php $_PHP_SELF ?>" method = "GET">
+      <form name="form" action="" method="get">
 
          LCD: <input type = "text" name = "LCD" />
          
