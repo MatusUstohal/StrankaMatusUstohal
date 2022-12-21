@@ -18,7 +18,58 @@
 ?>
 
 <html>
-
+ <head>
+     <style>
+        h1 {
+            color: green;
+        }
+               
+        /* toggle in label designing */
+        .toggle {
+            position : relative ;
+            display : inline-block;
+            width : 100px;
+            height : 52px;
+            background-color: red;
+            border-radius: 30px;
+            border: 2px solid gray;
+        }
+               
+        /* After slide changes */
+        .toggle:after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: gray;
+            top: 1px;
+            left: 1px;
+            transition:  all 0.5s;
+        }
+               
+        /* Toggle text */
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+               
+        /* Checkbox checked effect */
+        .checkbox:checked + .toggle::after {
+            left : 49px;
+        }
+               
+        /* Checkbox checked toggle label bg color */
+        .checkbox:checked + .toggle {
+            background-color: green;
+        }
+               
+        /* Checkbox vanished */
+        .checkbox {
+            display : none;
+        }
+    </style>
+ </head>
    <body>
 
       <form action = "<?php $_PHP_SELF ?>" method = "GET">
@@ -27,7 +78,9 @@
          
          </br>
 
-         Button: <input type = "checkbox" name = "Button" />
+         <input type="checkbox" id="Button"
+                    class="checkbox" />
+         <label for="Button" class="toggle">
       
          </br>
           
