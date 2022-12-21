@@ -4,7 +4,7 @@
        
       $text1 ="LCD: " . $_GET['LCD'] . "\n";
       $text2 ="Button: " . $_GET['Button'] . "\n";
-      $text3 ="Light(%): " . $_GET['Light-intensity'] . "\n";
+      $text3 ="Light(%): " . $_GET['Light'] . "\n";
       $file = fopen("zadanieESP.txt","w") or die("Unable to open file!");
       fwrite($file, $text1);
       fwrite($file, $text2);
@@ -124,7 +124,11 @@
          </br>
          </br>
           
-         Light: <input type="range" min="0" max="100" value="50" class="slider" id="Light">
+         <div>
+            <input type="range" id="Light" name="Light"
+            min="0" max="100">
+            <label for="Light">Light(%)</label>
+         </div>
 
          <input type = "submit" />
 
