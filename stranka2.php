@@ -31,16 +31,16 @@
     <form name="form" action="" method="post">
         <h1>Sign Up</h1>
         <div>
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name">
+            <label for="LDC">LCD text:</label>
+            <input type="text" name="LDC" id="LDC">
         </div>
         <div>
-            <label for="surname">Surname:</label>
-            <input type="text" name="surname" id="surname">
+            <label for="Button">On/Off Button:</label>
+            <input type="checkbox" name="Button" id="Button">
         </div>
         <div>
-            <label for="username">Username:</label>
-            <input type="text" name="username" id="username">
+            <label for="Light">Light(%):</label>
+            <input type="range" name="Light" id="Light" min="0" max="100">
         </div>
         <button type="submit">Register</button>
     </form>
