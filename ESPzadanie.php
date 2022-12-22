@@ -61,10 +61,10 @@
             <label for="LCD">LCD text:</label>
             <input type="text" name="LCD" id="LCD">
         </div>
-            <label class="checkbox-switch">
+            <label class="switch">
             <label for="Button">On/Off Button:</label>
             <input type="checkbox" name="Button" id="Button">
-            <span class="checkbox-switch-slider"></span>
+            <span class="slider round"></span>
         </label>
         <div class="light-slider-container">
             <label for="Light">Light(%):</label>
