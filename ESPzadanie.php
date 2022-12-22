@@ -61,11 +61,11 @@
             <label for="LCD">LCD text:</label>
             <input type="text" name="LCD" id="LCD">
         </div>
-        <div>
+        <div class="toggle-checkbox">
             <label class="checkbox-container">
             <label for="Button">On/Off Button:</label>
             <input type="checkbox" name="Button" id="Button">
-            <span class="checkmark"></span>
+            <span class="toggle-handle"></span>
             </label>
         </div>
         <div class="light-slider-container">
