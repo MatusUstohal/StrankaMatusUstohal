@@ -1,20 +1,21 @@
 <?php
-    $text1 ="Name: " . $_POST['name'] . "\n";
-    $text2 ="Surname: " . $_POST['surname'] . "\n";
-    $text3 ="Alias: " . $_POST['username'] . "\n";
-    $text4 ="Email: " . $_POST['email'] . "\n";
-    $text5 ="Telephone number: " . $_POST['number'] . "\n";
-    $text6 ="Password: " . $_POST['password'] . "\n";
-    $text7 ="Company: " . $_POST['company'];
-    $file = fopen("zadanie.txt","w") or die("Unable to open file!");
-    fwrite($file, $text1);
-    fwrite($file, $text2);
-    fwrite($file, $text3);
-    fwrite($file, $text4);
-    fwrite($file, $text5);
-    fwrite($file, $text6);
-    fwrite($file, $text7);
-    fclose($file);   
+    if(isset($_GET["LCD"]) || isset($_GET["Light"])) {
+      
+      if(isset($_GET["Button"])){
+         $text2 ="Button: 1" . "\n";
+      }else{
+         $text2 ="Button: 0" . "\n";
+      }
+      
+      $text1 ="LCD: " . $_GET['LCD'] . "\n";
+      $text3 ="Light(%): " . $_GET['Light'] . "\n";
+      $file = fopen("zadanieESP.txt","w") or die("Unable to open file!");
+      fwrite($file, $text1);
+      fwrite($file, $text2);
+      fwrite($file, $text3);
+      fclose($file);
+       
+      exit(); 
 ?>
 
 <!DOCTYPE html>
