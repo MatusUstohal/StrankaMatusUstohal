@@ -1,4 +1,4 @@
-<?php
+<!--<?php
     if(isset($_GET["LCD"]) || isset($_GET["Light"])) {
       
       if(isset($_GET["Button"])){
@@ -14,7 +14,7 @@
       fwrite($file, $text2);
       fwrite($file, $text3);
       fclose($file);
-?>
+?>-->
 
 <!DOCTYPE html>
 <html lang="en">
