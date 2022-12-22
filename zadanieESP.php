@@ -14,8 +14,6 @@
       fwrite($file, $text2);
       fwrite($file, $text3);
       fclose($file);
-       
-      exit(); 
 ?>
 
 <!DOCTYPE html>
