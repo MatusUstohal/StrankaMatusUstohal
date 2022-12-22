@@ -1,8 +1,8 @@
 /* Style the checkbox container */
 .checkbox-container {
-  display: flex;
-  align-items: center;
+  display: block;
   position: relative;
+  padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 22px;
@@ -15,9 +15,6 @@
 /* Hide the default checkbox */
 .checkbox-container input {
   position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
   opacity: 0;
   cursor: pointer;
 }
@@ -25,13 +22,11 @@
 /* Create a custom checkbox */
 .checkmark {
   position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
+  top: 0;
+  left: 0;
   height: 25px;
   width: 25px;
   background-color: #eee;
-  border: 1px solid #ccc;
 }
 
 /* On mouse-over, add a grey background color */
