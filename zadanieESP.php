@@ -72,7 +72,7 @@
 
       <form name="form" action="" method="GET">
 
-         LCD: <input type = "text" name = "LCD" />
+         <!--LCD: <input type = "text" name = "LCD" />
          
          </br>
          </br>
@@ -88,9 +88,22 @@
             <input type="range" id="Light" name="Light"
             min="0" max="100">
             <label for="Light">Light(%)</label>
-         </div>
+         </div> -->
 
-         <input type = "submit" />
+         <div>
+            <label for="LDC">LCD text:</label>
+            <input type="text" name="LDC" id="LDC">
+        </div>
+        <div>
+            <label for="Button">On/Off Button:</label>
+            <input type="checkbox" name="Button" id="Button">
+        </div>
+        <div>
+            <label for="Light">Light(%):</label>
+            <input type="range" name="Light" id="Light" min="0" max="100">
+        </div>
+
+         <button type="submit">Send information</button>
 
       </form>     
 
