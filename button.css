@@ -1,6 +1,7 @@
 /* The switch container */
 label.switch {
-  float: right;
+  display: inline-block;
+  padding-right: 50px;
 }
 
 /* The switch - the box around the slider */
@@ -13,6 +14,7 @@ label.switch {
 
 /* Hide default HTML checkbox */
 .switch input {
+  display: block;
   opacity: 0;
   width: 0;
   height: 0;
