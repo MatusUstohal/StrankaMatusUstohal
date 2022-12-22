@@ -18,7 +18,8 @@
             $text1 = $currentValue;
       }
 
-      fwrite($file, $text1);
+      file_put_contents('zadanieESP.txt', $text1);
+
 
       $text3 ="Light(%): " . $_GET['Light'] . "\n";
       fwrite($file, $text2);
