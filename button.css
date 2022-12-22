@@ -1,5 +1,5 @@
-/* Style the toggle switch checkbox container */
-.toggle-checkbox-container {
+/* Style the checkbox container */
+.checkbox-container {
   display: flex;
   align-items: center;
   position: relative;
@@ -10,11 +10,11 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  pointer-events: none; /* Make toggle switch only clickable when hovered over toggle switch */
+  pointer-events: none; /* Make checkbox only clickable when hovered over checkbox */
 }
 
 /* Hide the default checkbox */
-.toggle-checkbox-container input {
+.checkbox-container input {
   position: absolute;
   right: 0;
   top: 50%;
@@ -23,42 +23,49 @@
   cursor: pointer;
 }
 
-/* Create a custom toggle switch */
-.toggle-checkbox {
+/* Create a custom checkbox */
+.checkmark {
   position: absolute;
   top: 50%;
   right: 0;
-  transform: translateY(-50%) rotate(180deg); /* Rotate toggle switch 180 degrees */
-  width: 50px;
+  transform: translateY(-50%);
   height: 25px;
-  background-color: #ccc;
-  border-radius: 30px;
-  overflow: hidden; /* Prevent toggle switch handle from extending past toggle switch container */
-}
-
-/* Style the toggle switch handle */
-.toggle-checkbox::before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 21px;
-  height: 21px;
-  background-color: #fff;
-  border-radius: 50%; /* Make the toggle switch handle a circle */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 25px;
+  background-color: #eee;
+  pointer-events: auto; /* Allow checkbox to be clicked */
 }
 
 /* On mouse-over, add a grey background color */
-.toggle-checkbox-container:hover input ~ .toggle-checkbox {
-  background-color: #eee;
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
 }
 
-/* When the checkbox is checked, add a blue background color and slide the handle to the left */
-.toggle-checkbox-container input:checked ~ .toggle-checkbox {
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
   background-color: #2196F3;
 }
 
-.toggle-checkbox-container input:checked ~ .toggle-checkbox::before {
-  transform: translateX(-100%); /* Slide toggle switch handle to the left */
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
