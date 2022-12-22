@@ -1,7 +1,7 @@
 /* The switch container */
 label.switch {
   display: inline-block;
-  padding-right: 50px;
+  padding-right: 500px;
 }
 
 /* The switch - the box around the slider */
