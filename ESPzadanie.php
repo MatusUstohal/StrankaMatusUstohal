@@ -45,9 +45,9 @@
         <div>
             <label for="Light">Light(%):</label>
             <input type="range" name="Light" id="Light" min="0" max="100" value="50" oninput="rangeValue.innerText = this.value">
-            <p>You are currently on:</p>
+            You are currently on:
             <p id="rangeValue">50</p>
-            <p>%</p>
+            %
         </div>
         <button type="submit">Update</button>
     </form>
