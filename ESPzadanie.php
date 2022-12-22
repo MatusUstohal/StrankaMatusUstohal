@@ -25,11 +25,6 @@
     <link rel="stylesheet" href="https://www.phptutorial.net/app/css/style.css">
     <link rel="stylesheet" href="styles.css">
     <title>Update</title>
-    <style>
-    .inline {
-        display: inline-block;
-    }
-    </style>
 </head>
 <body>
 <main>
@@ -43,12 +38,12 @@
             <label for="Button">On/Off Button:</label>
             <input type="checkbox" name="Button" id="Button">
         </div>
-        <div id="section">
+        <div>
             <label for="Light">Light(%):</label>
             <input type="range" name="Light" id="Light" min="0" max="100" value="50" oninput="TextL.rangeValue.innerText = this.value">
-            <p class="inline" id="TextL">Your chosen light level is at: </p>
-            <p class="inline" id="rangeValue">50</p>
-            <p class="inline" id="innerText">%</p>
+            <p>id="TextL">Your chosen light level is at: </p>
+            <p>id="rangeValue">50</p>
+            <p>id="innerText">%</p>
         </div>
         <button type="submit">Update</button>
     </form>
