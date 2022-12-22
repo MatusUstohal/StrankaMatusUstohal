@@ -125,7 +125,7 @@
         </div>
             <label for="Button" class="switch">
             <!--<label for="Button">On/Off Button:</label>-->
-            <input type="checkbox" name="Button" id="Button">
+            <input type="checkbox" name="Button" id="Button" value="1">
             <span>Off</span>
             <span>On</span>
             </label>
