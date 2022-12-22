@@ -1,4 +1,4 @@
-<?php
+<!--<?php
     $text1 ="Name: " . $_POST['name'] . "\n";
     $text2 ="Surname: " . $_POST['surname'] . "\n";
     $text3 ="Alias: " . $_POST['username'] . "\n";
@@ -70,3 +70,4 @@
 </main>
 </body>
 </html>
+-->
