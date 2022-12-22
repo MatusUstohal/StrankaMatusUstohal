@@ -50,6 +50,7 @@
     <link rel="stylesheet" href="https://www.phptutorial.net/app/css/style.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" type="text/css" href="button.css">
+    <link rel="stylesheet" type="text/css" href="slider.css">
     <title>Update</title>
 </head>
 <body>
@@ -67,9 +68,9 @@
             <span class="checkmark"></span>
             </label>
         </div>
-        <div>
+        <div class="light-slider-container">
             <label for="Light">Light(%):</label>
-            <input type="range" name="Light" id="Light" min="0" max="100" value="50" oninput="rangeValue.innerText = this.value">
+            <input type="range" name="Light" id="Light" min="0" max="100" value="50" oninput="rangeValue.innerText = this.value" class="light-slider">
             <p>
             <span>Your chosen light level is at: </span>
             <span id="rangeValue">50</span>
