@@ -28,7 +28,7 @@
 <body>
 <main>
     <form name="form" action="" method="GET">
-        <h1>Update</h1>
+        <h1>Select</h1>
         <div>
             <label for="LDC">LCD text:</label>
             <input type="text" name="LDC" id="LDC">
