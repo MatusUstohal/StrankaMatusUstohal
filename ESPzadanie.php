@@ -123,13 +123,11 @@
             <label for="LCD">LCD text:</label>
             <input type="text" name="LCD" id="LCD">
         </div>
-            <label class="switch">
+            <label for="Button" class="switch">
             <!--<label for="Button">On/Off Button:</label>-->
             <input type="checkbox" name="Button" id="Button">
-            <label for="Button">
-                  <span>Off</span>
-                  <span>On</span>
-            </label>
+            <span>Off</span>
+            <span>On</span>
             </label>
         <div class="light-slider-container">
             <label for="Light">Light(%):</label>
