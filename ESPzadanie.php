@@ -6,7 +6,7 @@
 
       if (isset($_GET['LCD']) && !empty($_GET['LCD'])) {
             $text1 = "LCD: " . $_GET['LCD'] . "\n";
-      } else {
+      }else {
             $text1 = $currentValue;
       }
       fwrite($file, $text1);
@@ -17,17 +17,28 @@
             $currentValue = file_get_contents('zadanieESP.txt');
       }
 
+      $lines = explode("\n", $currentValue);
+
+      foreach ($lines as $key => $line) {
+            if (stripos($line, 'Button:') !== false) {
+                  unset($lines[$key]);
+            }
+            if (stripos($line, 'Light(') !== false) {
+                  unset($lines[$key]);
+            }
+      }
+
       if (isset($_GET["Button"])) {
-             $text2 = "Button: 1" . "\n";
-      } else {
-             $text2 = "Button: 0" . "\n";
+            $text2 = "Button: 1" . "\n";
+      }else {
+            $text2 = "Button: 0" . "\n";
       }
 
       $text3 = "Light(%): " . $_GET['Light'] . "\n";
 
-      $text1 = $currentValue;
+      $text1 = implode("\n", $lines);
 
-      file_put_contents('zadanieESP.txt', $text2 . $text3 . $text1);
+      file_put_contents('zadanieESP.txt', $text1 . $text2 . $text3);
       fclose($file);
 ?>
 
