@@ -7,13 +7,12 @@
 /* Style the light slider */
 .light-slider {
   -webkit-appearance: none;
-  width: 100px;
+  width: 100%; /* Change this */
   height: 5px;
   cursor: pointer;
-  outline: none; /* Remove this */
+  outline: none;
   background: #ddd;
   border-radius: 10px;
-}
 
 /* Style the thumb (handle) */
 .light-slider::-webkit-slider-thumb {
