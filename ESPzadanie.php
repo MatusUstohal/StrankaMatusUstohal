@@ -1,25 +1,21 @@
 <?php
-      $file = fopen("zadanieESP.txt","w") or die("Unable to open file!");
       if(isset($_GET["Button"])){
          $text2 ="Button: 1" . "\n";
       }else{
          $text2 ="Button: 0" . "\n";
       }
       
-      $currentValue = '';
-
-      if (file_exists('zadanieESP.txt')) {
-            $currentValue = file_get_contents('zadanieESP.txt');
-      }
+      $file = fopen("zadanieESP.txt", "r") or die("Unable to open file!");
+      $currentValue = fread($file, filesize("zadanieESP.txt"));
+      fclose($file);
+      $file = fopen("zadanieESP.txt", "w") or die("Unable to open file!");
 
       if (isset($_GET['LCD']) && !empty($_GET['LCD'])) {
             $text1 = "LCD: " . $_GET['LCD'] . "\n";
       } else {
             $text1 = $currentValue;
       }
-
-      file_put_contents('zadanieESP.txt', $text1);
-
+      fwrite($file, $text1);
 
       $text3 ="Light(%): " . $_GET['Light'] . "\n";
       fwrite($file, $text2);
