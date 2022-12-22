@@ -10,47 +10,26 @@
   width: 100%;
   height: 5px;
   cursor: pointer;
-  outline: none;
+  outline: none; /* Remove outline when dragging */
   background: #ddd;
   border-radius: 10px;
+}
 
-/* Style the thumb (handle) */
+/* Style the light slider thumb */
 .light-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 21px;
+  height: 21px;
   background: #fff;
-  border-radius: 50%;
+  border-radius: 50%; /* Make the thumb a circle */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .light-slider::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
+  width: 21px;
+  height: 21px;
   background: #fff;
-  border-radius: 50%;
+  border-radius: 50%; /* Make the thumb a circle */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-
-/* Style the label text */
-.light-slider-container label {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  font-size: 18px;
-}
-
-/* Allow the thumb to reach the start and end of the track */
-.light-slider::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 5px;
-  cursor: pointer;
-  background: #ddd;
-  border-radius: 10px;
-}
-
-.light-slider::-moz-range-track {
-  width: 100%;
-  height: 5px;
