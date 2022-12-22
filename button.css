@@ -10,6 +10,7 @@ label.switch {
   display: inline-block;
   width: 60px;
   height: 34px;
+  padding-right: 50px;
 }
 
 /* Hide default HTML checkbox */
