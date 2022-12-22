@@ -64,6 +64,7 @@
             <label class="switch-container">
             <label for="Button">On/Off Button:</label>
             <input type="checkbox" name="Button" id="Button">
+            <span class="slider"></span>
             </label>
         </div>
         <div>
