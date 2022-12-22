@@ -1,10 +1,4 @@
-<?php
-      if(isset($_GET["Button"])){
-         $text2 ="Button: 1" . "\n";
-      }else{
-         $text2 ="Button: 0" . "\n";
-      }
-      
+<?php      
       $file = fopen("zadanieESP.txt", "r") or die("Unable to open file!");
       $currentValue = fread($file, filesize("zadanieESP.txt"));
       fclose($file);
@@ -17,7 +11,14 @@
       }
       fwrite($file, $text1);
 
-      $text3 ="Light(%): " . $_GET['Light'] . "\n";
+      if (isset($_GET["Button"])) {
+            $text2 = "Button: 1" . "\n";
+      } else {
+            $text2 = "Button: 0" . "\n";
+      }
+
+      $text3 = "Light(%): " . $_GET['Light'] . "\n";
+
       fwrite($file, $text2);
       fwrite($file, $text3);
       fclose($file);
