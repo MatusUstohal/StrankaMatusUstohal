@@ -5,12 +5,12 @@
   position: relative;
   margin: 0 0 20px 0;
   cursor: pointer;
-  font-size: inherit;
+  font-size: inherit; /* Use default font size */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  overflow: hidden;
+  pointer-events: none; /* Make toggle switch only clickable when hovered over toggle switch */
 }
 
 /* Hide the default checkbox */
@@ -28,44 +28,37 @@
   position: absolute;
   top: 50%;
   right: 0;
-  transform: translateY(-50%);
+  transform: translateY(-50%) rotate(180deg); /* Rotate toggle switch 180 degrees */
   width: 50px;
   height: 25px;
-  background-color: #eee;
-  border-radius: 25px;
+  background-color: #ccc;
+  border-radius: 30px;
+  overflow: hidden; /* Prevent toggle switch handle from extending past toggle switch container */
 }
 
-/* Create the toggle switch handle */
-.toggle-handle {
+/* Style the toggle switch handle */
+.toggle-checkbox::before {
+  content: "";
   position: absolute;
-  top: 50%;
-  right: 2px;
-  transform: translateY(-50%);
+  top: 2px;
+  left: 2px;
   width: 21px;
   height: 21px;
   background-color: #fff;
-  border-radius: 50%;
+  border-radius: 50%; /* Make the toggle switch handle a circle */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* On mouse-over, add a grey background color to the toggle switch */
+/* On mouse-over, add a grey background color */
 .toggle-checkbox-container:hover input ~ .toggle-checkbox {
-  background-color: #ccc;
+  background-color: #eee;
 }
 
-/* When the checkbox is checked, move the toggle switch handle to the left and add a blue background to the toggle switch */
+/* When the checkbox is checked, add a blue background color and slide the handle to the left */
 .toggle-checkbox-container input:checked ~ .toggle-checkbox {
   background-color: #2196F3;
 }
 
-.toggle-checkbox-container input:checked ~ .toggle-checkbox .toggle-handle {
-  right: calc(100% - 2px);
+.toggle-checkbox-container input:checked ~ .toggle-checkbox::before {
+  transform: translateX(-100%); /* Slide toggle switch handle to the left */
 }
-
-/* Make the checkbox only clickable when hovered over the toggle switch */
-.toggle-checkbox-container input:hover {
-  cursor: pointer;
-}
-
-/* Style the light slider container */
-.light-slider
