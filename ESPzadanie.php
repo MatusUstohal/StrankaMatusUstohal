@@ -23,7 +23,7 @@
             if (stripos($line, 'Button:') !== false) {
                   unset($lines[$key]);
             }
-            if (stripos($line, 'Light(') !== false) {
+            if (stripos($line, 'Light(%):') !== false) {
                   unset($lines[$key]);
             }
       }
