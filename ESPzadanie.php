@@ -10,7 +10,8 @@
          $text1 ="LCD: " . $_GET['LCD'] . "\n";
          fwrite($file, $text1);
       }
-
+      $text1 ="LCD: " . $_GET['LCD'] . "\n";
+      echo $text1;
       $text3 ="Light(%): " . $_GET['Light'] . "\n";
       fwrite($file, $text2);
       fwrite($file, $text3);
