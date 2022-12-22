@@ -1,4 +1,4 @@
-<!--<?php
+<?php
     if(isset($_GET["LCD"]) || isset($_GET["Light"])) {
       
       if(isset($_GET["Button"])){
@@ -14,7 +14,7 @@
       fwrite($file, $text2);
       fwrite($file, $text3);
       fclose($file);
-?>-->
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +27,7 @@
 </head>
 <body>
 <main>
-    <form name="form" action="" method="get">
+    <form name="form" action="" method="post">
         <h1>Update</h1>
         <div>
             <label for="LDC">LCD text:</label>
