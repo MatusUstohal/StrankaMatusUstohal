@@ -1,14 +1,17 @@
 <?php
+      $file = fopen("zadanieESP.txt","w") or die("Unable to open file!");
       if(isset($_GET["Button"])){
          $text2 ="Button: 1" . "\n";
       }else{
          $text2 ="Button: 0" . "\n";
       }
-        
-      $text1 ="LCD: " . $_GET['LCD'] . "\n";
+      
+      if(isset($_GET["LCD"])){
+         $text1 ="LCD: " . $_GET['LCD'] . "\n";
+         fwrite($file, $text1);
+      }
+
       $text3 ="Light(%): " . $_GET['Light'] . "\n";
-      $file = fopen("zadanieESP.txt","w") or die("Unable to open file!");
-      fwrite($file, $text1);
       fwrite($file, $text2);
       fwrite($file, $text3);
       fclose($file);
