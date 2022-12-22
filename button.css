@@ -1,9 +1,11 @@
 /* Style the toggle switch checkbox container */
 .toggle-checkbox-container {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   position: relative;
+  margin: 0 0 20px 0;
   cursor: pointer;
-  font-size: 22px;
+  font-size: inherit; /* Use default font size */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -13,7 +15,7 @@
 /* Hide the default checkbox */
 .toggle-checkbox-container input {
   position: absolute;
-  left: 0;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
   opacity: 0;
@@ -24,7 +26,7 @@
 .toggle-checkbox {
   position: absolute;
   top: 50%;
-  left: 0;
+  right: 0;
   transform: translateY(-50%);
   width: 50px;
   height: 25px;
@@ -36,7 +38,7 @@
 .toggle-handle {
   position: absolute;
   top: 50%;
-  left: 2px;
+  right: 2px;
   transform: translateY(-50%);
   width: 21px;
   height: 21px;
@@ -50,16 +52,19 @@
   background-color: #ccc;
 }
 
-/* When the checkbox is checked, move the toggle switch handle to the right and add a blue background to the toggle switch */
+/* When the checkbox is checked, move the toggle switch handle to the left and add a blue background to the toggle switch */
 .toggle-checkbox-container input:checked ~ .toggle-checkbox {
   background-color: #2196F3;
 }
 
 .toggle-checkbox-container input:checked ~ .toggle-checkbox .toggle-handle {
-  left: calc(100% - 2px);
+  right: calc(100% - 2px);
 }
 
 /* Make the checkbox only clickable when hovered over the toggle switch */
 .toggle-checkbox-container input:hover {
   cursor: pointer;
 }
+
+/* Style the light slider container */
+.light-slider
