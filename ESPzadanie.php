@@ -10,8 +10,6 @@
          $text1 ="LCD: " . $_GET['LCD'] . "\n";
          fwrite($file, $text1);
       }
-      $text1 ="LCD: " . $_GET['LCD'] . "\n";
-      echo $text1;
       $text3 ="Light(%): " . $_GET['Light'] . "\n";
       fwrite($file, $text2);
       fwrite($file, $text3);
@@ -32,8 +30,8 @@
     <form name="form" action="" method="GET">
         <h1>Select</h1>
         <div>
-            <label for="LDC">LCD text:</label>
-            <input type="text" name="LDC" id="LDC">
+            <label for="LCD">LCD text:</label>
+            <input type="text" name="LCD" id="LCD">
         </div>
         <div>
             <label for="Button">On/Off Button:</label>
