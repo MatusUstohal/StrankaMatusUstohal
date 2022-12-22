@@ -1,5 +1,5 @@
-/* Style the checkbox container */
-.checkbox-container {
+/* Style the switch container */
+.switch-container {
   display: flex;
   align-items: center;
   position: relative;
@@ -9,3 +9,20 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the default checkbox */
+.switch-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom switch */
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:
