@@ -28,7 +28,7 @@
 </head>
 <body>
 <main>
-    <form name="form" action="" method="get">
+    <form name="form" action="" method="GET">
         <h1>Select</h1>
         <div>
             <label for="LDC">LCD text:</label>
