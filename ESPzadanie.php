@@ -64,7 +64,7 @@
         </div>
         <div>
             <label for="Button">On/Off Button:</label>
-            <input type="checkbox" name="Button" id="Button">
+            <input type="checkbox" name="Button" id="Button" value="1">
         </div>
         <div class="light-slider-container">
             <label for="Light">Light(%):</label>
