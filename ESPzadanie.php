@@ -11,16 +11,23 @@
       }
       fwrite($file, $text1);
 
+      $currentValue = '';
+
+      if (file_exists('zadanieESP.txt')) {
+            $currentValue = file_get_contents('zadanieESP.txt');
+      }
+
       if (isset($_GET["Button"])) {
-            $text2 = "Button: 1" . "\n";
+             $text2 = "Button: 1" . "\n";
       } else {
-            $text2 = "Button: 0" . "\n";
+             $text2 = "Button: 0" . "\n";
       }
 
       $text3 = "Light(%): " . $_GET['Light'] . "\n";
 
-      fwrite($file, $text2);
-      fwrite($file, $text3);
+      $text1 = $currentValue;
+
+      file_put_contents('zadanieESP.txt', $text2 . $text3 . $text1);
       fclose($file);
 ?>
 
