@@ -5,11 +5,12 @@
   position: relative;
   margin: 0 0 20px 0;
   cursor: pointer;
-  font-size: inherit; /* Use default font size */
+  font-size: inherit;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  overflow: hidden;
 }
 
 /* Hide the default checkbox */
