@@ -27,7 +27,7 @@
 </head>
 <body>
 <main>
-    <form name="form" action="" method="post">
+    <form name="form" action="" method="GET">
         <h1>Update</h1>
         <div>
             <label for="LDC">LCD text:</label>
