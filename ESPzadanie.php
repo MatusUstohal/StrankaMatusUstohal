@@ -42,9 +42,10 @@
             <label for="Light">Light(%):</label>
             <input type="range" name="Light" id="Light" min="0" max="100">
         </div>-->
-        <div class="slider">
-            <input type="range" min="0" max="100" value="50" oninput="rangeValue.innerText = this.value">
-            <p id="rangeValue">50</p>
+        <div>
+            <label for="Light">Light(%):</label>
+            <input type="range" name="Light" id="Light" min="0" max="100" value="50" oninput="rangeValue.innerText = this.value">
+            <p id="rangeValue">You are currently on 50%</p>
         </div>
         <button type="submit">Update</button>
     </form>
