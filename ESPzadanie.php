@@ -24,48 +24,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.phptutorial.net/app/css/style.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Register</title>
+    <title>Update</title>
 </head>
 <body>
 <main>
     <form name="form" action="" method="post">
-        <h1>Sign Up</h1>
+        <h1>Update</h1>
         <div>
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name">
+            <label for="LDC">LCD text:</label>
+            <input type="text" name="LDC" id="LDC">
         </div>
         <div>
-            <label for="surname">Surname:</label>
-            <input type="text" name="surname" id="surname">
+            <label for="Button">On/Off Button:</label>
+            <input type="checkbox" name="Button" id="Button">
         </div>
         <div>
-            <label for="username">Username:</label>
-            <input type="text" name="username" id="username">
+            <label for="Light">Light(%):</label>
+            <input type="range" name="Light" id="Light" min="0" max="100">
         </div>
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
-        </div>
-        <div>
-            <label for="number">Telephone number:</label>
-            <input type="text" name="number" id="number">
-        </div>
-        <div>
-            <label for="password">Password:</label>
-            <input type="password" name="password" id="password">
-        </div>
-        <div>
-            <label for="company">Company:</label>
-            <input type="company" name="company" id="company">
-        </div>
-        <div>
-            <label for="agree">
-                <input type="checkbox" name="agree" id="agree" value="yes"/> I agree
-                with the
-                <a href="#" title="terms of services">terms of services</a>
-            </label>
-        </div>
-        <button type="submit">Register</button>
+        <button type="submit">Update</button>
     </form>
 </main>
 </body>
