@@ -52,6 +52,67 @@
     <link rel="stylesheet" type="text/css" href="button.css">
     <link rel="stylesheet" type="text/css" href="slider.css">
     <title>Update</title>
+    <style>
+    /* Style the switch */
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+
+    /* Style the switch's checkbox */
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    /* Style the switch's label */
+    .switch label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      font-size: 14px;
+      color: #666;
+      transition: all 0.3s ease;
+    }
+
+    /* Style the switch's label's text */
+    .switch label span {
+      flex: 1;
+      text-align: center;
+    }
+
+    /* Style the switch's label's background */
+    .switch label::before,
+    .switch label::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50%;
+      height: 100%;
+      background: #ccc;
+      border-radius: 34px;
+      transition: all 0.3s ease;
+    }
+
+    /* Style the switch's label's background when checked */
+    .switch input:checked + label::before {
+      background: #2196F3;
+    }
+
+    /* Style the switch's label's thumb */
+    .switch input:checked + label::after {
+      left: 50%;
+    }
+  </style>
 </head>
 <body>
 <main>
@@ -62,10 +123,13 @@
             <input type="text" name="LCD" id="LCD">
         </div>
             <label class="switch">
-            <label for="Button">On/Off Button:</label>
+            <!--<label for="Button">On/Off Button:</label>-->
             <input type="checkbox" name="Button" id="Button">
-            <span class="slider"></span>
-        </label>
+            <label for="onoffswitch">
+                  <span>Off</span>
+                  <span>On</span>
+            </label>
+            </label>
         <div class="light-slider-container">
             <label for="Light">Light(%):</label>
             <input type="range" name="Light" id="Light" min="0" max="100" value="50" oninput="rangeValue.innerText = this.value" class="light-slider">
