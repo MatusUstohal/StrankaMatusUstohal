@@ -6,7 +6,7 @@
          $text2 ="Button: 0" . "\n";
       }
       
-      if(!isset($_GET["LCD"])){
+      if(isset($_GET["LCD"])){
          $text1 ="LCD: " . $_GET['LCD'] . "\n";
          fwrite($file, $text1);
       }
