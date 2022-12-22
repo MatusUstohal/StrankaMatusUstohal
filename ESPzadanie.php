@@ -62,7 +62,7 @@
             <input type="text" name="LCD" id="LCD">
         </div>
         <div class="toggle-checkbox">
-            <label class="checkbox-container">
+            <label class="toggle-checkbox-container">
             <label for="Button">On/Off Button:</label>
             <input type="checkbox" name="Button" id="Button">
             <span class="toggle-handle"></span>
