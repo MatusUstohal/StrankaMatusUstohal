@@ -41,7 +41,7 @@
             <label for="Light">Light(%):</label>
             <input type="range" name="Light" id="Light" min="0" max="100">
         </div>
-        <button type="submit">Register</button>
+        <button type="submit">Update</button>
     </form>
 </main>
 </body>
