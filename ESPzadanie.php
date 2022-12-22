@@ -61,13 +61,13 @@
             <label for="LCD">LCD text:</label>
             <input type="text" name="LCD" id="LCD">
         </div>
-        <div class="toggle-checkbox">
             <label class="toggle-checkbox-container">
             <label for="Button">On/Off Button:</label>
             <input type="checkbox" name="Button" id="Button">
+        <div class="toggle-checkbox">
             <span class="toggle-handle"></span>
-            </label>
         </div>
+        </label>
         <div class="light-slider-container">
             <label for="Light">Light(%):</label>
             <input type="range" name="Light" id="Light" min="0" max="100" value="50" oninput="rangeValue.innerText = this.value" class="light-slider">
