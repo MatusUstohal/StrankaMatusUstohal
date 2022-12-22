@@ -61,7 +61,7 @@
             <input type="text" name="LCD" id="LCD">
         </div>
         <div>
-            <label class="checkbox-container">
+            <label class="switch-container">
             <label for="Button">On/Off Button:</label>
             <input type="checkbox" name="Button" id="Button">
             </label>
