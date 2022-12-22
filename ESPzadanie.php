@@ -7,8 +7,8 @@
          $text2 ="Button: 0" . "\n";
       }
       
-      $text1 ="LCD: " . $_GET['LCD'] . "\n";
       $text3 ="Light(%): " . $_GET['Light'] . "\n";
+      $text1 ="LCD: " . $_GET['LCD'] . "\n";
       $file = fopen("zadanieESP.txt","w") or die("Unable to open file!");
       fwrite($file, $text1);
       fwrite($file, $text2);
