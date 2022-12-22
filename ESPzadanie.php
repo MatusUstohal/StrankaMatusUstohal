@@ -44,7 +44,7 @@
             <p>
             <span>Your chosen light level is at: </span>
             <p id="rangeValue">50</p>
-            <span id="innerText">%</span>
+            <span>%</span>
             </p>
         </div>
         <button type="submit">Update</button>
