@@ -40,7 +40,7 @@
         </div>
         <div>
             <label for="Light">Light(%):</label>
-            <input type="range" name="Light" id="Light" min="0" max="100" value="50" oninput="TextL.rangeValue.innerText = this.value">
+            <input type="range" name="Light" id="Light" min="0" max="100" value="50" oninput="rangeValue.innerText = this.value">
             <p>Your chosen light level is at: </p>
             <p id="rangeValue">50</p>
             <span id="innerText">%</span>
