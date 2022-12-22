@@ -5,7 +5,7 @@
   position: relative;
   margin: 0 0 20px 0;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 22px; /* Change this */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -66,4 +66,9 @@
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+/* Make the checkbox only clickable when hovered over the checkbox itself */
+.checkbox-container input:hover {
+  cursor: pointer;
 }
