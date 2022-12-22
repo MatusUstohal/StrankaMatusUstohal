@@ -38,14 +38,14 @@
             <label for="Button">On/Off Button:</label>
             <input type="checkbox" name="Button" id="Button">
         </div>
-        <!--<div>
-            <label for="Light">Light(%):</label>
-            <input type="range" name="Light" id="Light" min="0" max="100">
-        </div>-->
         <div>
             <label for="Light">Light(%):</label>
             <input type="range" name="Light" id="Light" min="0" max="100" value="50" oninput="rangeValue.innerText = this.value">
-            You are currently on:<h2 id="rangeValue">50</h2>%
+            <ul>
+                <li>You are currently on:</li>
+                <li><p id="rangeValue">50</p></li>
+                <li>%</li>
+            </ul>
         </div>
         <button type="submit">Update</button>
     </form>
