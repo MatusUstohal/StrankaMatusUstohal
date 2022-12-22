@@ -49,7 +49,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.phptutorial.net/app/css/style.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" type="text/css" href="button.css">
     <title>Update</title>
 </head>
 <body>
