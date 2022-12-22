@@ -10,7 +10,7 @@
   width: 100px;
   height: 5px;
   cursor: pointer;
-  outline: none;
+  outline: none; /* Remove this */
   background: #ddd;
   border-radius: 10px;
 }
@@ -42,3 +42,16 @@
   transform: translateY(-50%);
   font-size: 18px;
 }
+
+/* Allow the thumb to reach the start and end of the track */
+.light-slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: #ddd;
+  border-radius: 10px;
+}
+
+.light-slider::-moz-range-track {
+  width: 100%;
+  height: 5px;
