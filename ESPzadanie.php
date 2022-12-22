@@ -40,12 +40,8 @@
         </div>
         <div>
             <label for="Light">Light(%):</label>
-            <input type="range" name="Light" id="Light" min="0" max="100" value="50" oninput="rangeValue.innerText = this.value">
-            <ul>
-                <li>You are currently on:</li>
-                <li><p id="rangeValue">50</p></li>
-                <li>%</li>
-            </ul>
+            <input type="range" name="Light" id="Light" min="0" max="100" value="50" oninput="rangeValue.innerText = this.value" . "%">
+            <p You are currently on: id="rangeValue">50</p>
         </div>
         <button type="submit">Update</button>
     </form>
