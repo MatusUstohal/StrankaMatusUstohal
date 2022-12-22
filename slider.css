@@ -2,6 +2,7 @@
 .light-slider-container {
   position: relative;
   margin: 20px 0;
+  padding: 10px 0; /* Add padding to allow light slider thumb to be dragged to the edges of the container */
 }
 
 /* Style the light slider */
