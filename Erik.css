@@ -6,7 +6,7 @@ body {
   height: 100vh;
 }
 
-.form {
+form {
   background-color: #15172b;
   border-radius: 20px;
   box-sizing: border-box;
@@ -45,7 +45,7 @@ body {
   margin-top: 30px;
 }
 
-.input {
+input {
   background-color: #303245;
   border-radius: 12px;
   border: 0;
@@ -74,8 +74,8 @@ body {
   width: 50px;
 }
 
-.input:focus ~ .cut,
-.input:not(:placeholder-shown) ~ .cut {
+input:focus ~ .cut,
+input:not(:placeholder-shown) ~ .cut {
   transform: translateY(8px);
 }
 
@@ -91,16 +91,16 @@ body {
   top: 20px;
 }
 
-.input:focus ~ .placeholder,
-.input:not(:placeholder-shown) ~ .placeholder {
+input:focus ~ .placeholder,
+input:not(:placeholder-shown) ~ .placeholder {
   transform: translateY(-30px) translateX(10px) scale(0.75);
 }
 
-.input:not(:placeholder-shown) ~ .placeholder {
+input:not(:placeholder-shown) ~ .placeholder {
   color: #808097;
 }
 
-.input:focus ~ .placeholder {
+input:focus ~ .placeholder {
   color: #dc2f55;
 }
 
