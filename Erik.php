@@ -35,37 +35,37 @@
       <div class="title">Welcome</div>
       <div class="subtitle">Let's create your account!</div>
       <div class="input-container ic1">
-        <input id="firstname" class="input" type="text" placeholder=" " />
+        <input id="firstname" name="firstname" class="input" type="text" placeholder=" " />
         <div class="cut"></div>
         <label for="firstname" class="placeholder">First name</label>
       </div>
       <div class="input-container ic2">
-        <input id="lastname" class="input" type="text" placeholder=" " />
+        <input id="lastname" name="lastname" class="input" type="text" placeholder=" " />
         <div class="cut"></div>
         <label for="lastname" class="placeholder">Last name</label>
       </div>
       <div class="input-container ic2">
-        <input id="email" class="input" type="text" placeholder=" " />
+        <input id="email" name="email" class="input" type="text" placeholder=" " />
         <div class="cut cut-short"></div>
         <label for="email" class="placeholder">Email</>
       </div>
       <div class="input-container ic2">
-        <input id="number" class="input" type="text" placeholder=" " />
+        <input id="number" name="number" class="input" type="text" placeholder=" " />
         <div class="cut cut-number"></div>
         <label for="number" class="placeholder">Telephone number</>
       </div>
       <div class="input-container ic2">
-        <input id="password" class="input" type="text" placeholder=" " />
+        <input id="password" name="password" class="input" type="text" placeholder=" " />
         <div class="cut cut-password"></div>
         <label for="password" class="placeholder">Password</>
       </div>
       <div class="input-container ic2">
-        <input id="company" class="input" type="text" placeholder=" " />
+        <input id="company" name="company" class="input" type="text" placeholder=" " />
         <div class="cut cut-company"></div>
         <label for="company" class="placeholder">Company name</>
       </div>
       <div class="input-container ic2">
-        <input id="username" class="input" type="text" placeholder=" " />
+        <input id="username" name="username" class="input" type="text" placeholder=" " />
         <div class="cut"></div>
         <label for="username" class="placeholder">Username</>
       </div>
