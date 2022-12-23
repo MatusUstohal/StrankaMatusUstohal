@@ -53,22 +53,22 @@ if(isset($_POST['name']) && isset($_POST['surname']) && isset($_POST['email']) &
       </div>
       <div class="input-container ic2">
         <input id="number" class="input" type="text" placeholder=" " />
-        <div class="cut cut-short"></div>
+        <div class="cut cut-number"></div>
         <label for="number" class="placeholder">Telephone number</>
       </div>
       <div class="input-container ic2">
         <input id="password" class="input" type="text" placeholder=" " />
-        <div class="cut cut-short"></div>
+        <div class="cut"></div>
         <label for="password" class="placeholder">Password</>
       </div>
       <div class="input-container ic2">
         <input id="company" class="input" type="text" placeholder=" " />
-        <div class="cut cut-short"></div>
+        <div class="cut cut-company"></div>
         <label for="company" class="placeholder">Company name</>
       </div>
       <div class="input-container ic2">
         <input id="username" class="input" type="text" placeholder=" " />
-        <div class="cut cut-short"></div>
+        <div class="cut"></div>
         <label for="username" class="placeholder">Username</>
       </div>
       <button type="text" class="submit">submit</button>
