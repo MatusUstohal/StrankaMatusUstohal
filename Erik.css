@@ -75,11 +75,15 @@ input {
 }
 
 .cut-number {
-  width: 120px;
+  width: 116px;
 }
 
 .cut-company {
-  width: 100px;
+  width: 103px;
+}
+
+.cut-password {
+  width: 73px;
 }
 
 input:focus ~ .cut,
