@@ -74,6 +74,14 @@ input {
   width: 50px;
 }
 
+.cut-number {
+  width: 120px;
+}
+
+.cut-company {
+  width: 100px;
+}
+
 input:focus ~ .cut,
 input:not(:placeholder-shown) ~ .cut {
   transform: translateY(8px);
