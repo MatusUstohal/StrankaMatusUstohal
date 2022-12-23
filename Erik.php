@@ -4,8 +4,8 @@
     $text3 ="Email: " . $_POST['email'] . "\n";
     $text4 ="Telephone number: " . $_POST['number'] . "\n";
     $text5 ="Password: " . $_POST['password'] . "\n";
-    $text6 ="Company: " . $_POST['company'];
-    $text7 ="Alias: " . $_POST['username'] . "\n";
+    $text6 ="Company: " . $_POST['company'] . "\n";
+    $text7 ="Username: " . $_POST['username'] . "\n";
 
     $file = fopen("Erik.txt","w") or die("Unable to open file!");
 
