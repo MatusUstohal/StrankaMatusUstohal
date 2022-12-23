@@ -1,5 +1,4 @@
 <?php
-if(isset($_POST['name']) && isset($_POST['surname']) && isset($_POST['email']) && isset($_POST['number']) && isset($_POST['password']) && isset($_POST['company']) && isset($_POST['username'])){
     $text1 ="Name: " . $_POST['name'] . "\n";
     $text2 ="Surname: " . $_POST['surname'] . "\n";
     $text3 ="Email: " . $_POST['email'] . "\n";
@@ -18,8 +17,7 @@ if(isset($_POST['name']) && isset($_POST['surname']) && isset($_POST['email']) &
     fwrite($file, $text6);
     fwrite($file, $text7);
 
-    fclose($file); 
-}
+    fclose($file);
 ?>
 
 <!DOCTYPE html>
