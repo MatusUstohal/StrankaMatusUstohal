@@ -58,7 +58,7 @@ if(isset($_POST['name']) && isset($_POST['surname']) && isset($_POST['email']) &
       </div>
       <div class="input-container ic2">
         <input id="password" class="input" type="text" placeholder=" " />
-        <div class="cut"></div>
+        <div class="cut cut-password"></div>
         <label for="password" class="placeholder">Password</>
       </div>
       <div class="input-container ic2">
