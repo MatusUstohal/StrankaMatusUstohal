@@ -56,7 +56,7 @@ if(isset($_POST['name']) && isset($_POST['surname']) && isset($_POST['email']) &
         <div class="cut cut-short"></div>
         <label for="number" class="placeholder">Telephone number</>
       </div>
-      <div class="input-container ic1">
+      <div class="input-container ic2">
         <input id="password" class="input" type="text" placeholder=" " />
         <div class="cut cut-short"></div>
         <label for="password" class="placeholder">Password</>
@@ -66,7 +66,7 @@ if(isset($_POST['name']) && isset($_POST['surname']) && isset($_POST['email']) &
         <div class="cut cut-short"></div>
         <label for="company" class="placeholder">Company name</>
       </div>
-      <div class="input-container ic1">
+      <div class="input-container ic2">
         <input id="username" class="input" type="text" placeholder=" " />
         <div class="cut cut-short"></div>
         <label for="username" class="placeholder">Username</>
