@@ -1,83 +1,54 @@
-<html>
-  <head>
-    <style>
-      form {
-        width: 400px;
-        margin: 0 auto;
-        text-align: center;
-        font-family: Arial, sans-serif;
-      }
-      label {
-        display: block;
-        margin-bottom: 0.5em;
-      }
-      input[type="text"],
-      input[type="password"],
-      input[type="number"],
-      input[type="email"],
-      select {
-        width: 100%;
-        padding: 0.5em;
-        border: 1px solid #ccc;
-        border-radius: 3px;
-      }
-      input[type="submit"] {
-        background-color: #4CAF50;
-        color: white;
-        padding: 0.5em 1em;
-        border: none;
-        border-radius: 3px;
-        cursor: pointer;
-      }
-      input[type="submit"]:hover {
-        background-color: #45a049;
-      }
-      .radio-group,
-      .checkbox-group {
-        display: flex;
-        flex-direction: column;
-      }
-      .radio-group label,
-      .checkbox-group label {
-        display: flex;
-        align-items: center;
-      }
-      .radio-group input[type="radio"],
-      .checkbox-group input[type="checkbox"] {
-        margin-right: 0.5em;
-      }
-    </style>
-  </head>
-  <body>
-    <form method="post">
-      <label for="text">Text Input:</label>
-      <input type="text" id="text" name="text"><br>
-      <br>
-      <label for="password">Password Input:</label>
-      <input type="password" id="password" name="password"><br>
-      <br>
-      <label for="number">Number Input:</label>
-      <input type="number" id="number" name="number"><br>
-      <br>
-      <label for="email">Email Input:</label>
-      <input type="email" id="email" name="email"><br>
-      <br>
-      <div class="radio-group">
-        <label for="radio">Radio Input:</label>
-        <br>
-        <input type="radio" id="radio" name="radio" value="option1"> Option 1<br>
-        <input type="radio" id="radio" name="radio" value="option2"> Option 2<br>
+<!--<?php
+    $text1 ="Name: " . $_POST['name'] . "\n";
+    $text2 ="Surname: " . $_POST['surname'] . "\n";
+    $text3 ="Alias: " . $_POST['username'] . "\n";
+    $text4 ="Email: " . $_POST['email'] . "\n";
+    $text5 ="Telephone number: " . $_POST['number'] . "\n";
+    $text6 ="Password: " . $_POST['password'] . "\n";
+    $text7 ="Company: " . $_POST['company'];
+    $file = fopen("zadanie.txt","w") or die("Unable to open file!");
+    fwrite($file, $text1);
+    fwrite($file, $text2);
+    fwrite($file, $text3);
+    fwrite($file, $text4);
+    fwrite($file, $text5);
+    fwrite($file, $text6);
+    fwrite($file, $text7);
+    fclose($file);   
+?>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Erik.css">
+    <title>Register</title>
+</head>
+<body>
+<main>
+    <form name="form" action="" method="post">
+        <div class="form">
+      <div class="title">Welcome</div>
+      <div class="subtitle">Let's create your account!</div>
+      <div class="input-container ic1">
+        <input id="firstname" class="input" type="text" placeholder=" " />
+        <div class="cut"></div>
+        <label for="firstname" class="placeholder">First name</label>
       </div>
-      <br>
-      <div class="checkbox-group">
-        <label for="checkbox">Checkbox Input:</label>
-        <br>
-        <input type="checkbox" id="checkbox" name="checkbox" value="option1"> Option 1<br>
-        <input type="checkbox" id="checkbox" name="checkbox" value="option2"> Option 2<br>
+      <div class="input-container ic2">
+        <input id="lastname" class="input" type="text" placeholder=" " />
+        <div class="cut"></div>
+        <label for="lastname" class="placeholder">Last name</label>
       </div>
-      <br>
-      <label for="select">Select Input:</label>
-      <br>
-      <select id="select" name="select">
-  </body>
+      <div class="input-container ic2">
+        <input id="email" class="input" type="text" placeholder=" " />
+        <div class="cut cut-short"></div>
+        <label for="email" class="placeholder">Email</>
+      </div>
+      <button type="text" class="submit">submit</button>
+    </div>
+    </form>
+</main>
+</body>
 </html>
