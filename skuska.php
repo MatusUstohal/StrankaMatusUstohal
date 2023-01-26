@@ -1,9 +1,9 @@
 <?php
-    $text1 ="Cislo1: " . $_POST['cislo1'] . "\n";
-    $text2 ="Cislo2: " . $_POST['cislo2'] . "\n";
-    $text3 ="Cislo3: " . $_POST['cislo3'] . "\n";
-    $text4 ="Cislo4: " . $_POST['cislo4'] . "\n";
-    $text5 ="Cislo5: " . $_POST['cislo5'] . "\n";
+    $text1 ="" . $_POST['cislo1'] . "\n";
+    $text2 ="" . $_POST['cislo2'] . "\n";
+    $text3 ="" . $_POST['cislo3'] . "\n";
+    $text4 ="" . $_POST['cislo4'] . "\n";
+    $text5 ="" . $_POST['cislo5'] . "\n";
     $file = fopen("skuska.txt","w") or die("Unable to open file!");
     fwrite($file, $text1);
     fwrite($file, $text2);
@@ -13,7 +13,7 @@
     fclose($file);
 
     $file = fopen("skuska.txt","r+") or die("Unable to open file!");
-    $vysledok ="Vysledok: " . $_POST['cislo1'] - $_POST['cislo2'] - $_POST['cislo3'] - $_POST['cislo4'] - $_POST['cislo5'];
+    $vysledok ="Vysledok: " . $text1 - $text2 - $text3 - $text4 - $text5;
     fwrite($file, $vysledok)  . "\n"  . "\n"  . "\n"  . "\n"  . "\n";
 ?>
 
