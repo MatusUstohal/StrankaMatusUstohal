@@ -4,7 +4,7 @@
     $text3 ="Cislo3: " . $_POST['cislo3'] . "\n";
     $text4 ="Cislo4: " . $_POST['cislo4'] . "\n";
     $text5 ="Cislo5: " . $_POST['cislo5'] .;
-    $file = fopen("zadanie.txt","w") or die("Unable to open file!");
+    $file = fopen("skuska.txt","w") or die("Unable to open file!");
     fwrite($file, $text1);
     fwrite($file, $text2);
     fwrite($file, $text3);
