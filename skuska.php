@@ -27,24 +27,24 @@
     <form name="form" action="" method="post">
         <h1>Skuska</h1>
         <div>
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name">
+            <label for="cislo1">Cislo1:</label>
+            <input type="text" name="cislo1" id="cislo1">
         </div>
         <div>
-            <label for="surname">Surname:</label>
-            <input type="text" name="surname" id="surname">
+            <label for="cislo2">Cislo2:</label>
+            <input type="text" name="cislo2" id="cislo2">
         </div>
         <div>
-            <label for="username">Username:</label>
-            <input type="text" name="username" id="username">
+            <label for="cislo3">Cislo3:</label>
+            <input type="text" name="cislo3" id="cislo3">
         </div>
         <div>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
+            <label for="cislo4">Cislo4:</label>
+            <input type="text" name="cislo4" id="cislo4">
         </div>
         <div>
-            <label for="number">Telephone number:</label>
-            <input type="text" name="number" id="number">
+            <label for="cislo5">Cislo5:</label>
+            <input type="text" name="cislo5" id="cislo5">
         </div>
         <button type="submit">Submit</button>
     </form>
