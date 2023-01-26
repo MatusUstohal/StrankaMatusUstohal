@@ -12,9 +12,13 @@
     fwrite($file, $text5);
     fclose($file);
 
-    $file = fopen("skuska.txt","r+") or die("Unable to open file!");
+    $file = fopen("skuska.txt","r") or die("Unable to open file!");
     $vysledok ="Vysledok: " . $text1 - $text2 - $text3 - $text4 - $text5;
-    fwrite($file, $vysledok)  . "\n"  . "\n"  . "\n"  . "\n"  . "\n";
+    fclose($file);
+
+    $file = fopen("skuska.txt","a") or die("Unable to open file!");
+    fwrite($file, $vysledok);
+    fclose($file);
 ?>
 
 <!DOCTYPE html>
