@@ -14,6 +14,7 @@
 
     $file = fopen("skuska.txt","r+") or die("Unable to open file!");
     $vysledok ="Vysledok: " . $_POST['cislo1'] - $_POST['cislo2'] - $_POST['cislo3'] - $_POST['cislo4'] - $_POST['cislo5'];
+    fwrite($file, $vysledok);
 ?>
 
 <!DOCTYPE html>
