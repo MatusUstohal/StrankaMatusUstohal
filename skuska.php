@@ -46,22 +46,7 @@
             <label for="number">Telephone number:</label>
             <input type="text" name="number" id="number">
         </div>
-        <div>
-            <label for="password">Password:</label>
-            <input type="password" name="password" id="password">
-        </div>
-        <div>
-            <label for="company">Company:</label>
-            <input type="company" name="company" id="company">
-        </div>
-        <div>
-            <label for="agree">
-                <input type="checkbox" name="agree" id="agree" value="yes"/> I agree
-                with the
-                <a href="#" title="terms of services">terms of services</a>
-            </label>
-        </div>
-        <button type="submit">Register</button>
+        <button type="submit">Submit</button>
     </form>
 </main>
 </body>
